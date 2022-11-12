@@ -1,0 +1,46 @@
+{
+	"model": {
+		"model_type": "resnet18",
+		"num_classes": 1,
+		"pretrained": "./pretrained_models/resnet18-5c106cde.pth"
+	},
+	"dataset": {
+		"data_dir": "./data/ILSVRC2012_val2",
+		"input_size": [224, 224],
+		"norm_params": {
+			"mean": [123.675, 116.280, 103.530],
+			"std": [58.395, 57.120, 57.375]
+		},
+		"use_lmdb": true,
+		"lmdb_dir": "./data/lmdb/ILSVRC2012_val2",
+		"sampler": {
+			"rpos": 1,
+			"rneg": 10
+		},
+		"aug": true,
+		"class2id": {
+			"183":1, "184":1, "185":1, "186":1, "187":1, "188":1, "189":1
+		}
+	},
+	"training": {
+		"train_batch_size": 128,
+		"test_batch_size": 256,
+		"num_workers": 4,
+		"loss_type": "TPAUCLoss",
+		"loss_params": {"gamma": 0.01, "reduction": "mean", "epoch_to_paced": 8,
+			"re_scheme" : "Poly", "norm": false},
+		"lr": 0.5e-3,
+		"weight_decay": 1e-5,
+		"momentum": 0.9,
+		"nesterov": true,
+		"lr_decay_rate": 0.99,
+		"lr_decay_epochs": 1,
+		"epoch_num":30,
+		"metric_params": {
+			"alpha": 0.05,
+			"beta": 0.05
+		},
+		"save_path": "./save/",
+		"seed": 7
+	}
+}

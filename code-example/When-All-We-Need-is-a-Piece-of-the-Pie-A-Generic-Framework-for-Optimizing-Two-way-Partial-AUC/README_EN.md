@@ -24,7 +24,6 @@ In our paper, we evaluate our proposed method on three benchmark datasets, inclu
 Moreover, we construct three different subsets for each dataset to make the comparison more fairly：
 - We construct three binary subsets, in which the positive categories are 1) birds, 2) automobiles, and 3) cats, respectively. To be specific, the class ids are "2", "1", "3".
 - We create CIFAR-100-LT in the same way as CIFAR-10-LT, and transform it into three binary long-tailed datasets by selecting a superclass as positive class examples each time. Specifically, the positive superclasses are 1) fruits and vegetables, 2) insects and 3) large omnivores and herbivores, respectively. To be specific, the class ids are "6, 7, 14, 18, 24", "0, 51, 53, 57, 83", "15, 19, 21, 32, 38".
-- CIFAR-100-long-tail各子集类别id分别为:
 - Tiny-ImageNet-200-LT: Similar to the CIFAR-100-LT dataset, we choose three positive
 superclasses to construct binary subsets: 1) dogs, 2) birds and 3) vehicles. To be specific, the class ids are "24, 25, 26, 27, 28, 29", "11, 20, 21, 22", "70, 81, 94, 107, 111, 116, 121, 133, 145, 153, 164, 166".
 

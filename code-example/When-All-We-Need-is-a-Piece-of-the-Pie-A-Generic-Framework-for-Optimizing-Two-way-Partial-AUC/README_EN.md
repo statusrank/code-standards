@@ -1,7 +1,7 @@
 # When All We Need is a Piece of the Pie: A Generic Framework for Optimizing Two-way Partial AUC
 >  Zhiyong Yang, Qianqian Xu, Shilong Bao, Yuan He, Xiaochun Cao and Qingming Huang. When All We Need is a Piece of the Pie: A Generic Framework for Optimizing Two-way Partial AUC. ICML 2021 (Long talk, 3\%)
 
-This is an official implementation with PyTorch, and we run our code on Ubuntu 18.04 server. More experimental details can be found in our paper.
+This is an official implementation with PyTorch, and we run our code on Ubuntu 16.04.1 server. More experimental details can be found in our paper.
 
 ## Dependencies
 All the experiments are carried out on a ubuntu 16.04.1 server equipped with Intel(R) Xeon(R) Silver 4110 CPU and a TITAN RTX GPU. In addition, our experiments require
